@@ -3,6 +3,8 @@
 #include <stdlib.h>
 #include <ctype.h>
 
+#include "Notes.c"
+#include "Notes.h"
 void to_lowercase(char* word);
 
 int main(void){
@@ -28,7 +30,7 @@ int main(void){
                 printf("Usage: notes requires 3 inputs an action and subject");
             }
             else{
-                notes_main();
+                notes_main(action,subject);
             }
         }
 
